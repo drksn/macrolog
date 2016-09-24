@@ -1,13 +1,13 @@
 # MACROLOG #
 A simple head-only log system. 
 
-You must include two directories, 'macrolog/include' and 'macrolog/iter/include'. 
+You must include two directories, ```macrolog/include``` and ```macrolog/iter/include```. 
 
 ## Requirements ##
 Compile option: --std=c++11 
 
 ## Log settings ##
-Some components might print logs to ```stderr```.
+The default log destination is ```stderr```.
 
 You can redirect the log destination of each level by using:
 ```
