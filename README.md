@@ -1,7 +1,7 @@
 # MACROLOG #
 A simple head-only log system. 
 
-You must include two directories, ```macrolog/include``` and ```macrolog/iter/include```. 
+You must include two directories, ```include``` and ```iter/include```. 
 
 ## Requirements ##
 Compile option: --std=c++11 
