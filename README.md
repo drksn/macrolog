@@ -1,9 +1,10 @@
-# ITER #
-An c++ library consist of some exquisite components to make things easy.
+# MACROLOG #
+A simple head-only log system. 
+
+You must include two directories, 'macrolog/include' and 'macrolog/iter/include'. 
 
 ## Requirements ##
-1. G++: --std=c++11 -pthread
-2. Linux kernel: >= 2.6 (inotify for FileMonitor)
+Compile option: --std=c++11 
 
 ## Log settings ##
 Some components might print logs to ```stderr```.
@@ -18,6 +19,3 @@ Compile options:
 * ```-DDEBUG``` : Enable debug log.
 * ```-DITER_LOG_DISABLE``` : Disable all of the logs.
 
-## Components ##
-* [[FileMonitor](https://github.com/qianyl/iter/tree/master/include/iter/filemonitor)] Triger the registered callback immediately when the listened file system events occured. 
-* [[FileKeeper](https://github.com/qianyl/iter/tree/master/include/iter/filekeeper)] Hot load file into your custom structure automatically.
