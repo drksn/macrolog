@@ -1,4 +1,4 @@
-#include <macrolog/macrolog.hpp>
+#include <macrolog.hpp>
 #include <gtest/gtest.h>
 
 #include <iostream>
