@@ -1,5 +1,5 @@
-#ifndef ITER_MACRO_LOGBASE_HPP
-#define ITER_MACRO_LOGBASE_HPP
+#ifndef ITER_MACROLOG_BASE_HPP
+#define ITER_MACROLOG_BASE_HPP
 
 #include <macrolog/macro_basic.hpp>
 #include <macrolog/detail/log_util.hpp>
@@ -41,4 +41,4 @@
 #define ITER_FATAL(fmt, args...) ITER_LOG_LAYOUT_WRITE(4, fmt, ##args)
 #endif // ITER_FATAL
 
-#endif // ITER_MACRO_LOGBASE_HPP
+#endif // ITER_MACROLO_GBASE_HPP

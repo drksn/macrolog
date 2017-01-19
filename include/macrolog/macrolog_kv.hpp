@@ -1,7 +1,7 @@
-#ifndef ITER_MACRO_KV_HPP
-#define ITER_MACRO_KV_HPP
+#ifndef ITER_MACROLOG_KV_HPP
+#define ITER_MACROLOG_KV_HPP
 
-#include <macrolog/macro_log_base.hpp>
+#include <macrolog/macrolog_base.hpp>
 #include <iter/kvstr.hpp>
 
 #ifndef MSG
@@ -36,4 +36,4 @@ static KvStr kvstr4log;
 #define ITER_FATAL_KV(args...) ITER_FATAL(KVSTR4LOG(args))
 #endif // ITER_FATAL_KV
 
-#endif // ITER_MACRO_KV_HPP
+#endif // ITER_MACROLOG_KV_HPP

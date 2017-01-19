@@ -1,4 +1,4 @@
-#include <macro_log.hpp>
+#include <macrolog/macrolog.hpp>
 #include <gtest/gtest.h>
 
 #include <iostream>
@@ -28,12 +28,12 @@ void log_loop(const std::string& log_str){
 }
 
 TEST(LogTest, Kv) {
-    double value = 2.0 / 7;
-    ITER_DEBUG_KV("DLTAG", MSG("Call 110."), KV("value", value));
-    ITER_INFO_KV("DLTAG", MSG("Call 110."), KV(value));
-    ITER_WARN_KV(MSG("Call 110."), KV(value));
-    ITER_ERROR_KV(MSG("Call 110."), KV(value));
-    ITER_FATAL_KV(MSG("Call 110."), KV(value));
+    double pi = 3.1415926;
+    ITER_DEBUG_KV("TAG", MSG("KV log test."), KV("pi", pi));
+    ITER_INFO_KV("TAG", MSG("KV log test."), KV(pi));
+    ITER_WARN_KV(MSG("KV log test."), KV(pi));
+    ITER_ERROR_KV(MSG("KV log test."), KV(pi));
+    ITER_FATAL_KV(MSG("KV log test."), KV(pi));
 
     std::map <std::string, int> mp =
         {std::make_pair("map_1", 1), std::make_pair("map_2", 2)};
@@ -41,7 +41,7 @@ TEST(LogTest, Kv) {
         {std::make_pair("vec_1", 3.3), std::make_pair("vec_2", 4.4)};
     std::list <std::tuple <std::string, int>> lst =
         {std::make_tuple("list_1", 5), std::make_tuple("list_2", 6)};
-    ITER_INFO_KV(MSG("map, vector and list test."), mp, vec, lst);
+    ITER_INFO_KV(MSG("Map, vector and list test."), mp, vec, lst);
 
     ITER_INFO_KV(MSG("Test one."));
 }
