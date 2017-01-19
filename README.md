@@ -19,7 +19,7 @@ Compile options:
 * ```-DDEBUG``` : Enable debug log.
 * ```-DITER_LOG_DISABLE``` : Disable all of the logs.
 
-## Example ##
+## Examples ##
 Code 1:
 ```
 double pi = 3.1415926;
